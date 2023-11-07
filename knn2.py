@@ -34,7 +34,6 @@ for accur in dic.values():
 from sklearn.metrics import precision_recall_fscore_support
 y_pred = classifier.predict(x_test)
 
-# محاسبه precision، recall و f-score برای هر دسته
 precision, recall, fscore, support = precision_recall_fscore_support(y_test, y_pred, average='binary') 
 
 print(f"Accuracy: {temp * 100:.2f}%")
